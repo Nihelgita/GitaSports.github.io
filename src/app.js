@@ -163,7 +163,7 @@ document.addEventListener('alpine:init', () => {
         ...this.items.map(item => `- ${item.name} x${item.quantity} @ ${rupiah(item.price)}`),
       ].join('\n');
 
-      const whatsappNumber = '6288806378277'; // Ganti dengan nomor WhatsApp Anda
+      const whatsappNumber = '6288806378277'; 
       const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(orderDetails)}`;
       window.location.href = whatsappUrl;
       alert('Pesanan telah dikirim ke WhatsApp!');
